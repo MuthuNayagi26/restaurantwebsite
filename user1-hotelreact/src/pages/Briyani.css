@@ -1,0 +1,145 @@
+.briyani-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure full height */
+  margin: 0;
+  padding: 30px 20px 100px; /* Added top and bottom padding */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top with padding */
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  object-fit: cover; /* Ensure it covers the full container */
+  z-index: -1; /* Push it behind other content */
+}
+
+/* Grid Layout */
+.briyani-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px 30px; /* 20px for row spacing, 30px for column spacing */
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  position: relative; /* Ensure it's above the background */
+  z-index: 1;
+}
+
+/* Card Styling */
+.box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Adds a subtle lift effect */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Image Styling */
+.image img {
+  width: 100%; /* Ensure it scales within the box */
+  height: 200px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+  border-radius: 8px; /* Keep rounded corners */
+}
+
+/* Button Styling */
+.counter-container {
+  margin-top: 5px; /* Reduced margin */
+  display: flex;
+  justify-content: center; /* Centers the button inside the container */
+}
+
+/* Button Styling */
+.counter-button {
+  background-color: #ff6b01; 
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Reduced padding */
+  font-size: 14px; /* Slightly smaller font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px; /* Slightly smaller border radius */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.counter-button:hover {
+  background-color: #e65a00;
+  transform: scale(1.05); /* Reduced scale effect */
+}
+
+/* Icons */
+.icon {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.icon img {
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Dish Name */
+.dishname h3 {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Price Styling */
+.inricon {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Star Rating */
+.starrating {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+/* Description */
+.description p {
+  font-size: 15px;
+  color: #444;
+  font-weight: 500;
+  text-align: justify;
+}
+
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .briyani-items {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .background-image {
+    height: 100vh;
+  }
+}

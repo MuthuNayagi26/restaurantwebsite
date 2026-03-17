@@ -1,0 +1,192 @@
+/* ✅ Prevent horizontal scrolling */
+body, html {
+  overflow-x: hidden; /* Stops side scrolling */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* ✅ Ensure Navbar Stays Inside Screen */
+.navbar {
+  position:sticky;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #D69886;
+  color: black;
+  position: sticky;  /* Makes it stay on top */
+  overflow: visible;
+  top: 0;
+  left: 0;
+  width: 100%;  /* ✅ Ensures it fits inside screen */
+  max-width: 100%; /* ✅ Prevents overflow */
+  height: 90px; /* 🔥 Reduce height for better fit */
+  box-sizing: border-box; /* ✅ Ensures padding doesn't increase size */
+  z-index: 1000;
+}
+
+/* ✅ Adjust for small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* ✅ Allow height to adjust automatically */
+    padding: 10px;
+  }
+
+  .navbar-center,
+  .navbar-right {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+  }
+}
+.navbar-center {
+  flex: 1;
+  justify-content: center;
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Search bar styling */
+.search-bar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  background-color: #575757;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown when hovered */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ✅ Responsive Design */
+
+/* 📱 Small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 15px;
+  }
+
+  .navbar-center {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* 💻 Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-center {
+    gap: 15px;
+  }
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 5px 8px;
+  min-width: 20px;
+  text-align: center;
+}

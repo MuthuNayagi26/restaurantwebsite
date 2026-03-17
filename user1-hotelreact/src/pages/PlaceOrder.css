@@ -1,0 +1,146 @@
+/* Center box styling */
+.center-boxorder1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    width: 500px; /* Increased width */
+    height: auto; /* Auto height to fit content */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.loginorder1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.loginorder1 h3 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+}
+
+/* Box content styling */
+.box-contentorder1 {
+    width: 90%;
+    margin-top: 15px;
+}
+
+.box-contentorder1 h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Readonly Input (Payment Mode) */
+input.readonly-field {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* Focus styling */
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Textarea styling */
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+/* Delivery Location Styling */
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Align radio buttons horizontally */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Total Bill Styling */
+.box-contentorder1 p {
+    font-size: 18px;
+    font-weight: bold;
+    background: #007BFF;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Button Container */
+.button-containerorder1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* OK Button */
+.ok-btnorder1 {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ok-btnorder1:hover {
+    background: linear-gradient(135deg, #0056b3, #003f88);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .center-boxorder1 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .ok-btnorder1 {
+        width: 100%;
+    }
+}

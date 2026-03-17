@@ -1,0 +1,223 @@
+/* Reset default margins */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar container */
+.navbar {
+    width: 370px;
+    height: 670px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adjust this to fine-tune spacing */
+}
+
+/* Heading section */
+.heading {
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px; /* Space between heading and links */
+    top:50px;
+}
+
+.heading h2 {
+    margin: 0;
+    padding: 0; /* Remove unnecessary padding */
+    font-weight: 700;
+}
+
+/* Navbar links */
+.module {
+    width: 50%;
+    color: #00B074;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: justify;
+    transition: 0.3s;
+}
+
+.module-container {
+    margin-top: 40px; /* Adjust this value to move them down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.module:hover {
+    background: #adcaea;
+}
+
+.heading1 {
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-top: 90px;
+   
+}
+
+.heading2 {
+    width: 100%;
+    text-align: center;
+    color: rgb(68, 66, 66);
+    gap: 10px;
+    margin-top: -35px;
+   
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.table-container {
+    margin-top: -30px;
+    margin-left: 400px;
+    padding: 10px;
+    overflow-x: auto; /* Ensures horizontal scroll */
+    max-width: calc(100vw - 450px); /* Prevents overflow past the navbar */
+    box-sizing: border-box;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+th, td {
+    padding: 6px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #4a3f90;
+    color: white;
+}
+
+td {
+    background-color: #f4b55a;
+    white-space: pre-line;
+}
+
+/* Adjusting Specific Column Widths */
+th:nth-child(1), td:nth-child(1) {
+    width: 60px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 100px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 110px;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 180px;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 70px;
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 50px;
+}
+
+th:nth-child(7), td:nth-child(7) {
+    width: 180px;
+}
+
+th:nth-child(8), td:nth-child(8) {
+    width: 120px;
+}
+
+th:nth-child(9), td:nth-child(9) {
+    width: 80px;
+}
+
+th:nth-child(10), td:nth-child(10) {
+    width: 70px;
+}
+
+th:nth-child(11), td:nth-child(11) {
+    width: 80px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    margin-left: -1px;
+    display: inline-block;
+    margin-top: 5px; /* Adjust this value to move them down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 40px; /* Position below the menu */
+    left: 120px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-content a:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown when active */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }

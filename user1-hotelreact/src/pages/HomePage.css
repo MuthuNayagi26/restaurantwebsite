@@ -1,0 +1,322 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  font-size: 2.5rem;
+  font-family: 'Lily Script One', cursive;
+  color: #FCFCFC;
+}
+
+/* Red Box Section */
+.red-box {
+  background-color: #8B0305;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  padding: 10px;
+  font-family: 'Marko One', serif;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.slogan {
+  padding: 10px 20px;
+}
+
+/* Text Lines */
+.line1, .line2, .line3 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.line1 {
+  color: #8B0305;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.line2 {
+  color: #8B0305;
+  padding: 10px;
+  font-size: 3.5rem;
+}
+
+.line3 {
+  color: #7A7A86;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .top-left {
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+  }
+
+  .red-box {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      font-size: 1.3rem;
+  }
+
+  .slogan {
+      padding: 10px;
+  }
+
+  .line1 {
+      font-size: 1.3rem;
+  }
+
+  .line2 {
+      font-size: 3rem;
+  }
+
+  .line3 {
+      font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-left {
+      top: 60px;
+      font-size: 1.8rem;
+  }
+
+  .red-box {
+      font-size: 1.2rem;
+  }
+
+  .line1 {
+      font-size: 1.2rem;
+      padding: 20px;
+  }
+
+  .line2 {
+      font-size: 2.5rem;
+  }
+
+  .line3 {
+      font-size: 1.2rem;
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-left {
+      top: 40px;
+      font-size: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .red-box {
+      font-size: 1rem;
+      padding: 15px;
+  }
+
+  .line1 {
+      font-size: 1rem;
+  }
+
+  .line2 {
+      font-size: 2rem;
+  }
+
+  .line3 {
+      font-size: 1rem;
+  }
+}
+
+/*FoodMenu section*/
+
+.food-menu-container {
+  margin-left: 20px;
+  min-height: 350px; /* Adjust this value as needed */
+}
+
+.food-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.food-card {
+  display: flex;
+  background-color: #8b0000;
+  color: white;
+  height: 322px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rev {
+  color: brown;
+  margin-left: 700px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .food-menu {
+      grid-template-columns: repeat(1, 1fr); /* Stack cards in one column */
+  }
+
+  .food-card {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .image-section img {
+      height: 250px; /* Adjust image height */
+  }
+
+  .rev {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .food-menu-container {
+      margin-left: 10px;
+  }
+
+  .text-section {
+      padding: 15px;
+  }
+
+  .image-section img {
+      height: 200px;
+  }
+
+  .rev {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .food-menu-container {
+      margin-left: 5px;
+  }
+
+  .food-card {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .text-section {
+      padding: 10px;
+  }
+
+  .image-section img {
+      height: 180px;
+  }
+
+  .rev {
+      margin-left: 0;
+      text-align: center;
+      font-size: 0.9rem;
+  }
+}
+
+/* Reviews Section */
+.review-box {
+  width: 360px;
+  height: auto; /* Set height to auto */
+  border: 1px solid #ddd;
+  background-color: #D6EEEE;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px 20px; /* Reduced padding */
+  max-width: 1200px;
+  margin: 30px auto; /* Added margin for spacing */
+  justify-content: center;
+}
+
+
+
+
+.image-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  margin: 10px 0 5px;
+}
+
+.stars {
+  color: #FFD43B;
+}
+
+.review-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .reviews-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .review-box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review-box {
+    width: 90%;
+  }
+
+  .review-text {
+    font-size: 12px;
+  }
+}

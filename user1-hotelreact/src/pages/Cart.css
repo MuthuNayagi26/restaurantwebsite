@@ -1,0 +1,151 @@
+/* General Styling */
+.cart-container {
+  max-width: 900px;
+  margin-top : 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background: #D6EEEE;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Cart Item Styling */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.cart-details {
+  flex: 1;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.cart-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cart-details p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+/* Quantity Controls */
+.cart-controls {
+  display: flex;
+  align-items: center;
+}
+
+.qty-btn {
+  background: #ff6f00;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px #c55b00;
+  position: relative;
+}
+
+.qty-btn:active {
+  top: 2px;
+  box-shadow: 0 2px #c55b00;
+}
+
+.qty-btn:hover {
+  background: #e65c00;
+}
+
+.cart-controls span {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Remove Button */
+.remove-btn {
+  background: #ff3b3b;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 18px; /* Reduced font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px #b22222;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10px; /* Reduced min-width */
+  margin: 0 50px;
+}
+
+.remove-btn:active {
+  top: 2px;
+  box-shadow: 0 2px #b22222;
+}
+
+.remove-btn:hover {
+  background: #d32f2f;
+}
+
+/* Total Price */
+.total-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  background: #ffeeba; /* Change this color */
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.proceed-btn {
+  background: #28a745; /* Green color */
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Reduced padding */
+  font-size: 18px; /* Smaller font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 auto;
+  margin-top: 30px;
+  min-width: 80px; /* Adjust button width */
+}
+
+.proceed-btn:hover {
+  background: #218838;
+}
+
+
+
+
